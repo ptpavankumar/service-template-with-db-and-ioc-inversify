@@ -1,7 +1,7 @@
 {
-  "name": "service template with database and ioc (i.e. awilix)",
+  "name": "service template with database and ioc (i.e. inversify)",
   "version": "0.0.1",
-  "description": "service template to create api(s) ",
+  "description": "service template to create api(s) and ioc (i.e. InversifyJS",
   "main": "index.js",
   "scripts": {
     "dbupgrade": ". src/config/dbsetup.sh",
