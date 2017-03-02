@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use((req, res, next) => {
-  req.scope = container; // eslint-disable-line no-param-reassign
+  req.scope = container(); // eslint-disable-line no-param-reassign
   next();
 });
 

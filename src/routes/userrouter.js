@@ -29,7 +29,7 @@ const userGet = (req, res) => (
 );
 
 const userGetById = (req, res) => (
-  req.scope.resolve('userRepository').fetchSingle(req.params.userid)
+  req.scope.get(TYPES.User).fetchSingle(req.params.userid)
   .then(result => (
     res.status(200).send({ data: result.data })
   ))
